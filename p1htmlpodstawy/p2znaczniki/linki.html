@@ -10,21 +10,22 @@
     <!--    podstawowy link wewnętrzny-->
     <p>Zupy są bardzo pyszne<a href="obrazki.html">Strona o zupie</a></p>
     <!-- link zewnętrzny-->
-    <p><a href="https://en.wikipedia.org/wiki/Hedgehog">Strona o jeżozwierzu</a></p>
+    <p>   <a href="https://en.wikipedia.org/wiki/Hedgehog">Strona o jeżozwierzu</a>   </p>
     <!-- Obrazek jako link-->
     <p><a href="obrazki.html"><img src="../obrazki/zupa.jpg" alt="Pikantna zupa" width="664" height="442"> </a></p>
 
     <!--    Wydzielanie części obrazka jako linków-->
 <!--    Możliwe kształty: rect, circle, poly-->
 <!--    rect -- współrzędne w parach -- x,y górnego rogu, x,y dolnego rogu-->
-<!--    circle -- koordynaty x,y środek kółka, trzecia wartość średnica-->
+<!--    circle -- koordynaty x,y środek kółka, trzecia wartość promień-->
 <!--    poly -- wielokąt -- pary współrzędnych kolejnych punktów, wielokąt sam się domknie-->
     <img src="../obrazki/cat_dog.jpg" alt="Kot i pies" usemap="#myMap" width=553 height=480 title="Jak pies z kotem">
     <map name="myMap">
       <area shape="rect" coords="0,217,236,473" alt="Cat" href="cat.html">
       <area shape="rect" coords="303,84,527,473" alt="Phone" href="dog.html">
-
+      <area shape="circle" coords= "100,100,80" alt="okrąg" href="https://www.youtube.com">
     </map>
+    <p><a href="https://github.com/przemjan/pythonHTML">Strona z przykładami</a> </p>
 
   </body>
 </html>
