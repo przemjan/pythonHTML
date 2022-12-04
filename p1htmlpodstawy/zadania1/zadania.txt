@@ -1,0 +1,7 @@
+1. Popraw formatowanie kodu strony stronaDoPoprawy.html. Uwzględnij wcięcia, maksymalną długość linii itp.
+2. Stwórz stronę z listą numerowaną (10 elementów), w odwróconej kolejności, wypunktowaną liczbami rzymskimi,
+zaczynającą się od VII
+3. Stwórz stronę zawierającą link tekstowy (ścieżka względna) do podstrony, link tekstowy do strony zewnętrznej,
+oraz obrazek jako link.
+4. Napisz stronę, która będzie zawierała obrazek. Na obrazku wydziel 4 regiony stanowiące linki do stron zewnętrznych.
+Regiony powinny mieć różne kształty (rect, circle, poly), przynajmniej jeden każdego rodzaju.

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <!-- obowiązkowe elementy -->
+    <meta charset="UTF-8">
+    <title>Struktura2</title>
+
+    <!--  powinno się używać viewport, żeby kontrolować wyświetlanie na różnych urządzeniach-->
+    <!--  width=device-width ustawia szerokość strony dostosowaną do urządzenia-->
+    <!--  initial-scale=1.0 ustawia początkową wartość powiększenia-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Dodatkowe opcje, głównie dla wyszukiwarek-->
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="Opis struktury dokumentu">
+    <meta name="author" content="Jan Kowalski">
+
+    <!-- znacznik base może zawierać oba elementy, albo jeden z poniższych:   -->
+    <!-- href - ustawia bazowy adres dla wszystkich linków względnych w dokumencie-->
+    <!-- target - zachowanie linków na stronie-->
+    <!--    <base href="https://www.mojastrona.pl/" target="_blank">-->
+
+    <!--  znacznik link najczęściej używany jest do podłączania stylów CSS-->
+    <link rel="stylesheet" href="css/mojstyl.css">
+
+    <!--  Znacznik script definiuje JavaScript po stronie klienta -->
+    <script>
+        function foo() {
+            document.getElementById("scriptDemo").innerHTML = "Witaj świecie";
+        }
+    </script>
+
+
+  </head>
+  <body>
+    <p id = "scriptDemo">Przykładowy tekst (umieszczamy zawsze w elemencie) </p>
+    <button type="button" onclick="foo()">Kliknij mnie</button>
+
+  </body>
+</html>
