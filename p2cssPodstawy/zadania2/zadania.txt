@@ -1,0 +1,12 @@
+1. Stwórz prostą stronę na której:
+    -wszystkie akapity (6) będą napisane pochyłą czcionką, nadaj im tło
+    -część akapitów (3) będzie miała inne tło
+    -zawierającą listę nienumerowaną, część pozycji powinna być zaakcentowana (em),
+        elementy em znajdujące się w liście nienumerowanej powinny mieć inny kolor czcionki (grupowanie selektorów)
+    -zawierającą wszystkie typy nagłówków(h1-h6)
+    -zawierającą 6 elementów wyróżnionych (strong), za pomocą arkusza CSS usuń pogrubienie, dodaj podkreślenie
+    -zawierającą linki zewnętrzne (6),
+        za pomocą arkusza CSS w 3 linkach usuń podkreślenie, dodaj pogrubienie, zmień kolor
+2. Stwórz prostą stronę formatowaną zewnętrznym arkuszem CSS np. na temat swojego hobby. W arkuszu CSS wykorzystaj
+formatowanie za pomocą różnych selektorów: ogólnych, klas i id. Stwórz proste menu, wykorzystując listę i
+podlinkuj 3 podstrony. Na każdej podstronie wstaw link z możliwością powrotu do strony głównej.

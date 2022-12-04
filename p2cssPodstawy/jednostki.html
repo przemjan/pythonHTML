@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jednostki względne</title>
+    <style>
+
+        html {
+            font-size: 100%;
+        }
+
+        .normal {
+            font-size: 2.5em;
+        }
+
+        /*jednostki em i rem odnoszą się do wielkości czcionki (2.5 oznacza 250%)*/
+        /*em odnosi się do rodzica*/
+        .relatywna1 {
+            font-size: 2.5em;
+        }
+
+        /*rem (root em) odnosi się do elementu bazowego (html)*/
+        .relatywna2 {
+            font-size: 2.5rem;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <p>Tekst z domyślną wielkością czcionki</p>
+    <div class="normal">
+      <p>Tekst w divie powiększony </p>
+
+      <p class="relatywna1">Tekst z wielkością czcionki powiększoną relatywnie względem rodzica</p>
+      <p class="relatywna2">Tekst z wielkością czcionki powiększoną relatywnie względem dokumentu</p>
+    </div>
+    <p class="relatywna3">Tekst powiększony względem viewportu</p>
+
+  </body>
+</html>
