@@ -1,0 +1,22 @@
+Zad1. Podziel stronę ze swoim hobby na oddzielne kontenery div.
+Zad2. Nadaj każdemu kontenerowi szerokość i wysokość, właściwości margin i padding.
+        Żeby kontenery było widać, nadaj każdemu kontenerowi odrębne właściwości background, border itp.
+
+
+Projekt 1:
+Adam Mickiewicz: Wiersze
+Wykonaj stronę WWW prezentującą pięć wierszy Adama Mickiewicza.
+Na górze strony mają być umieszczone tytuły poszczególnych utworów.
+Przy każdym tytule powinien znajdować się miniaturka obrazka tematycznie powiązanego z utworem.
+Każdy tytuł powinien być linkiem do utworu znajdującego się poniżej (anchor).
+Udostępnij możliwość poruszania się po stronie za pomocą tabindex.
+
+Każdy utwór powinien się znajdować w osobnym kontenerze (div).
+Tytuł każdego utworu powinien być w kontenerze potomnym.
+ Strukturę witryny, podobnie jak w poprzednim przypadku, oznacz elementami h1, h2 oraz h3:
+•	h1 — autor;
+•	h2 — tytuł kolekcji utworów;
+•	h3 — tytuł pojedynczego utworu.
+Dłuższe tytuły wierszy podziel na kilka linijek, wykorzystując do tego element <br>.
+Każdy utwór powinien byc podzielony na wiersze (linie) za pomocą znacznika <br>
+
