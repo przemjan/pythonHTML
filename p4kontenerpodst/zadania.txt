@@ -16,7 +16,7 @@ Tytuł każdego utworu powinien być w kontenerze potomnym.
  Strukturę witryny, podobnie jak w poprzednim przypadku, oznacz elementami h1, h2 oraz h3:
 •	h1 — autor;
 •	h2 — tytuł kolekcji utworów;
-•	h3 — tytuł pojedynczego utworu.
+•	h3 — tytuł pojedynczego utworuK.
 Dłuższe tytuły wierszy podziel na kilka linijek, wykorzystując do tego element <br>.
 Każdy utwór powinien byc podzielony na wiersze (linie) za pomocą znacznika <br>
 
