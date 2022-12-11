@@ -70,7 +70,7 @@ na listingu:
 	<tbody>
 		<tr>
 			<th scope="row">1.</th>
-			<td>Zagłębie Lubin</td>
+			<td>Lechia Gdańsk</td>
 			<td>62</td>
 		</tr>
 		<tr>
