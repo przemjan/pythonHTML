@@ -1,0 +1,150 @@
+Zadanie 1:
+Stwórz stronę WWW zawierającą łączenie komórek tabeli jak na obrazku tabela.jpg.
+Zadanie 2:
+Stwórz stronę zawierają tabelę (5,5), w której:
+    - pierwsza kolumna będzie miała niebieskie tło, obramowanie solid
+    - dwie następne różowe tło, obramowanie dashed
+    - dwie następne zielone tło, obramowanie dotted
+
+
+Projekt 1
+Przygotuj w formie strony WWW tabelę prezentującą laureatów Literackiej Nagrody
+Nobla w latach 1951 – 1975. Co piąty wiersz tabeli wyróżnij innym kolorem.
+Przygotuj tabelę o dwóch kolumnach. W pierwszym wierszu umieść komórki nagłówkowe
+odnoszące się do kolumn (scope="col"). Komórki pierwszej kolumny będą
+się natomiast odnosiły do wierszy (scope="row"). Zarys tabeli jest przedstawiony na
+listingu:
+<table>
+<thead>
+	<tr>
+		<th scope="col">Rok</th>
+		<th scope="col">Laureat</th>
+	</tr>
+</thead>
+<tfoot>
+	<tr>
+		<th scope="col">Rok</th>
+		<th scope="col">Laureat</th>
+	</tr>
+</tfoot>
+<tbody>
+	<tr>
+		<th scope="row">1951</th>
+		<td>P. Lagerkvist (Sz)</td>
+	</tr>
+	<tr>
+		<th scope="row">1952</th>
+		<td>F. Mauriac (F)</td>
+	</tr>
+...
+<tbody>
+</table>
+
+Projekt 2
+Przygotuj witrynę WWW prezentującą tabelę ekstraklasy na zakończenie sezonu
+2016/2017. Zadanie wykonaj w taki sposób, by tabelę można było sortować rosnąco
+oraz malejąco według liczby zdobytych punktów.
+Projekt ten składa się z dwóch stron WWW: ekstraklasa-m.html oraz ekstraklasa-r.html.
+Pierwsza z nich, ekstraklasa-m.html, zawiera tabelę ekstraklasy posortowaną malejąco.
+Druga natomiast, ekstraklasa-r.html, prezentuje tabelę posortowaną rosnąco.
+Najpierw przygotuj plik ekstraklasa-m.html. Wykonaj tabelę przedstawioną w zarysie
+na listingu:
+<table>
+	<col id="k1" />
+	<col id="k2" />
+	<col />
+	<thead>
+		<tr id="w1">
+			<th scope="col">lp.</th>
+			<th scope="col">Klub</th>
+			<th scope="col"><a href="ekstraklasa-r.html">Punkty</a></th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+		<th scope="col">lp.</th>
+		<th scope="col">Klub</th>
+		<th scope="col"><a href="ekstraklasa-r.html">Punkty</a></th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<th scope="row">1.</th>
+			<td>Zagłębie Lubin</td>
+			<td>62</td>
+		</tr>
+		<tr>
+			<th scope="row">2.</th>
+			<td>GKS Bełchatów</td>
+			<td>61</td>
+		</tr>
+...
+	<tbody>
+</table>
+
+Zwróć uwagę na elementy col z identyfikatorami #k1 i #k2 oraz na pierwszy wiersz6
+z identyfikatorem #w1. Dzięki identyfikatorom #k1, #k2 oraz #w1 możesz w prosty sposób
+zmienić obramowanie tabeli:
+#k1 {
+border-right: solid 1px black;
+}
+#k2 {
+border-right: solid 1px black;
+}
+#w1 {
+border-bottom: double 4px black;
+}
+Gotowy plik ekstraklasa-m.html skopiuj, a duplikat nazwij ekstraklasa-r.html. W pliku
+ekstraklasa-r.html zmień porządek wierszy tak, by były one posortowane rosnąco względem
+ostatniej kolumny (tj. liczby zdobytych punktów).
+Na zakończenie zmień komórkę Punkty (ostatnia komórka w pierwszym wierszu).
+W pliku ekstraklasa-m.html komórka ta jest hiperłączem do pliku ekstraklasa-r.html:
+<th scope="col"><a href="ekstraklasa-r.html">Punkty</a></th>
+W pliku ekstraklasa-r.html komórka ta jest natomiast hiperłączem do pliku ekstraklasa-
+m.html:
+<th scope="col"><a href="ekstraklasa-m.html">Punkty</a></th>
+Projekt 3
+Wykonaj tabelę prezentującą kolory opisane w specyfikacji języka JavaScript. W tabeli
+użyj elementów thead, tfoot oraz tbody.
+Zarys tabeli jest przedstawiony na listingu  poniżej:
+<table>
+<thead>
+<tr>
+<th>lp.</th>
+<th>Kolor</th>
+<th>Nazwa koloru</th>
+<th>Kod koloru</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th>lp.</th>
+<th>Kolor</th>
+<th>Nazwa koloru</th>
+<th>Kod koloru</th>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="lp">1.</td>
+<td style="background: AliceBlue"></td>
+<td>AliceBlue</td>
+<td class="kod">F0F8FF</td>
+</tr>
+...
+<tbody>
+</table>
+W celu wyświetlenia koloru na stronie WWW użyj atrybutu style. Na przykład komórkę,
+która ma przedstawiać kolor o nazwie Khaki, sformatuj:
+<tr>
+<td class="lp">59.</td>
+<td style="background: Khaki"></td>
+<td>Khaki</td>
+<td class="kod">F0E68C</td>
+</tr>
+Do wymuszenia szerokości komórki użyj atrybutu width elementu td:
+td {
+border: 1px solid black;
+width: 120px;
+padding: 2px 8px;
+}
