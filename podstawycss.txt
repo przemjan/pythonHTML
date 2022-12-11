@@ -78,7 +78,7 @@ color
 line-height (wysokość linii)
 text-indent (wcięcie pierwszej linii tekstu)
 text-align (wyrównanie w poziomie)
-text-decoration (podkreślenie itp.)
+text-decoration: none; (podkreślenie itp.)
 text-transform (kapitalizacja itp.)
 text-shadow
 
